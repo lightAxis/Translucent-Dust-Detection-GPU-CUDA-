@@ -17,7 +17,7 @@ So I made lifetime trait in mean-shift process. centroid dies when reached to ma
 ![그림1](https://user-images.githubusercontent.com/62084431/103011839-f2b35680-457d-11eb-9e39-0d9bff6c4094.png)
 
 Estimated Density
-|LiftTime|Pic 1|Pic 2|Pic 3|
+|maxLiftTime|Pic 1|Pic 2|Pic 3|
 |:-:|:-:|:-:|:-:|
 |Full|0.301|0.463|0.739|
 |20  |0.301|0.463|0.738|
@@ -28,7 +28,7 @@ Estimated Density
 
 
 CPU Calculation Times(ms)
-|LiftTime|Pic 1|Pic 2|Pic 3|
+|maxLiftTime|Pic 1|Pic 2|Pic 3|
 |:-:|:-:|:-:|:-:|
 |Full|366|476|900|
 |20  |337|476|747|
@@ -38,7 +38,7 @@ CPU Calculation Times(ms)
 |5   |145|196|283|
 
 GPU Calculation Times(ms)
-|LiftTime|Pic 1|Pic 2|Pic 3|
+|maxLiftTime|Pic 1|Pic 2|Pic 3|
 |:-:|:-:|:-:|:-:|
 |Full|462|558|677|
 |20  |282|290|237|
@@ -67,5 +67,7 @@ In case of maxLifeTime=5, reduces 900ms -> 98ms. But estimation accuracy error r
 ## Environment
 
 OpenCV 4.01 / C++ / CUDA 10.1 / Visual Studio 2019
+
 CPU - Intel i7-8750H @ 2.20GHz
+
 GPU - GTX 1060
